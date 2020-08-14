@@ -1,0 +1,35 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+    <h2>Categories List</h2>
+    <ul>
+        <li>
+            <a href="{% url 'category' 'ART' %}">Collectibles & Art</a>
+        </li>
+        <li>
+            <a href="{% url 'category' 'ELECTRONICS' %}">Electronics</a>
+        </li>
+        <li>
+            <a href="{% url 'category' 'FASHION' %}">Fashion</a>
+        </li>
+        <li>
+            <a href="{% url 'category' 'HOME' %}">Home & Garden</a>
+        </li>
+        <li>
+            <a href="{% url 'category' 'PARTS' %}">Parts & Accesories</a>
+        </li>
+        <li>
+            <a href="{% url 'category' 'MUSICAL' %}">Musical Instruments & gear</a>
+        </li>
+        <li>
+            <a href="{% url 'category' 'SPORT' %}">Sporting goods</a>
+        </li>
+        <li>
+            <a href="{% url 'category' 'TOYS' %}">Toys & Hobbies</a>
+        </li>
+        <li>
+            <a href="{% url 'category' 'other' %}">Other categories</a>
+        </li>
+    </ul>
+
+    {% endblock %}

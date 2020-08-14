@@ -1,0 +1,39 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+    <h2>Listing: {{ auction.title }} <b>CLOSED</b></h2>
+    {% if is_wishlist %}
+        <a class="btn btn-dark" href="{% url 'remove_wishlist_closed' auction.id %}">Remove from Wishlist</a>
+    {% endif %}
+    {% if winner %}
+        <h4>Auction Closed. You are the winner of this auction.</h4>
+    {% else %}
+        <h4>Auction Closed.</h4>
+    {% endif %}
+    {% if listing_creator %}
+        <a class="btn btn-dark" href="{% url 'delete_auction' auction.id %}">Delete Auction</a>
+    {% endif %}
+    <div class="img-detail-container">
+        {% if auction.img_url %}
+        <img class="img-detail" src="{{ auction.img_url }}">
+        {% else %}
+        <img class="img-detail" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/480px-No_image_available.svg.png">
+        {% endif %}
+    </div>
+    <div class="info-container">
+        <p>{{ auction.description }}</p>
+        <h2>{{ bid_price }}</h2>
+    </div>
+    <hr>
+    <div class="details-container">
+        <h3>Details</h3>
+        <ul>
+            <li>Listed by: {{ auction.auction_user }}</li>
+            <li>Category: {{ category|default:"None" }}</li>
+            <li>Created: {{ auction.date_time }} </li>
+            <li>Initial bid: {{ auction.starting_bid }}</li>
+        </ul>
+    </div>
+
+
+{% endblock %}

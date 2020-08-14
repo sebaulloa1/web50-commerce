@@ -1,0 +1,155 @@
+body {
+    padding: 10px;
+    overflow-x: hidden;
+}
+
+.title-container {
+    background-color: #343A40;
+    color: white;
+    width: 100%;
+    height: 100px;
+}
+
+.title-container h1 {
+    padding: 5px 10px;
+}
+
+.index-listing {
+    width: 100%;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+
+.index-listing-closed {
+    clear: both;
+    width: 100%;
+    margin-left: 10%;
+    padding-top: 20px;
+}
+
+.row-container {
+    text-align: center;
+    width: 40%;
+    height: 210px;
+    float: left;
+    border: 1px solid grey;
+    margin-bottom: 5px;
+    margin-right: 15px;
+}
+
+.img-container {
+    
+    float: left;
+    height: auto;
+}
+
+.img-listing {
+    height: 200px;
+    padding: 5px;
+    object-fit: cover;
+    width: 200px;
+}
+
+.info-container {
+    text-align: center;
+    width: 100%;
+}
+
+.bid-container {
+    width: 100%;
+    text-align: center;
+}
+
+.details-container {
+    margin-top: 10px;
+}
+
+.img-detail-container {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.img-detail {
+    height: 350px;
+}
+
+.comment-container {
+    width: 400px;
+    height: 150px;
+    background-color: #343A40;
+    margin-bottom: 10px;
+}
+
+.comment-container h4 {
+    color: white;
+    padding: 5px 10px;
+    width: 50%;
+}
+
+.comment-container p {
+    background-color: white;
+    width: 96%;
+    height: 60%;
+    margin-left: 2%;
+    margin-bottom: 5%;
+    padding: 5px;
+    overflow: auto;
+}
+
+.comment-dt {
+    font-size: 11px;
+    color: white;
+    width: 30%;
+    float: right;
+    margin-top: -10%;
+}
+
+.comment-form {
+    width: 400px;
+    background-color: #343A40;
+    margin-bottom: 10px;
+}
+
+.comment-form label {
+    color: white;
+    padding: 5px 10px;
+}
+
+.create-comment {
+    height: 100px;
+    width: 96%;
+    margin-left: 2%;
+}
+
+.comment-form input[type="submit"] {
+    margin: 5px;
+    margin-left: 75%;
+    font-size: 11px;
+   
+}
+
+.create-form {
+    width: 400px;
+}
+
+.create-form #id_starting_bid {
+    width: 60px;
+}
+
+.create-form #id_img_url {
+    width: 400px;
+}
+
+.create-form input label {
+    display: block;
+    float: left;
+}
+
+#alert {
+    position: absolute;
+    text-align: center;
+    left: 35%;
+    width: 400px;
+    top: 29.5%;
+    font-weight: bold;
+}
